@@ -63,6 +63,8 @@ pipelines:
 
 This will perform syntax validation and will run the required test suite.  Please see https://bitbucket.org/geoff_williams/my_puppet_module for a working example module.
 
+To deploy the code directly to your Puppet Master, follow the instructions for testing Puppet Control Repositories from step 2 onwards and reference the latest git commit of your module in your control repository's Puppetfile.
+
 ## Puppet Control Repositories
 Puppet Control Repositories bind together:
 * [Hiera](https://docs.puppet.com/hiera/3.2/) User data
