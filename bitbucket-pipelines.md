@@ -13,7 +13,7 @@ Integrating Bitbucket Pipelines with Puppet Enterprise is quick, easy and secure
 Pipelines is able to integrate existing test tools by executing them in-order and watching for exit status codes indicating test failure.  The deployment of code is handled by the Puppet Code Manager service (formerly R10K) which is responsible for ensuring the desired code is present on your Puppet Master.
 
 # How Bitbucket Pipelines works
-All testing is carried out inside a docker container which makes it east to replicate and troubleshoot failing builds if required.  The steps forming a pipeline are described in the file `bitbucket-pipelines.yml` in the top level of a given repository.
+All testing is carried out inside a docker container which makes it easy to replicate and troubleshoot failing builds if required.  The steps forming a pipeline are described in the file `bitbucket-pipelines.yml` in the top level of a given repository.
 
 Bitbucket Pipelines executes each step of the defined pipeline and returns the final status as the overall build status, with zero indicating a successful build and non-zero indicating failure.
 
@@ -63,7 +63,7 @@ pipelines:
 
 This will perform syntax validation and will run the required test suite.  Please see https://bitbucket.org/geoff_williams/my_puppet_module for a working example module.
 
-To deploy the code directly to your Puppet Master, follow the instructions for testing Puppet Control Repositories from step 2 onwards and reference the latest git commit of your module in your control repository's Puppetfile.
+To deploy the code directly to your Puppet Master, follow the instructions for testing Puppet Control Repositories from step 2 onwards and reference the latest git commit of your module in your control repository's `Puppetfile`.
 
 ## Puppet Control Repositories
 Puppet Control Repositories bind together:
